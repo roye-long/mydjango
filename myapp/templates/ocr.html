@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <title>验证码识别</title>
+</head>
+<body>
+<div>
+<h1 align="center">开始实现验证码功能</h1>
+<hr/>
+<form method="post" enctype="multipart/form-data">
+{{uf.as_p}}
+<input type="submit" value="开始识别"/>
+</form>
+</div>
+<hr/>
+<div align="center">
+    <h2 align="center" style="color: red">说明</h2>
+    <p style="color: red"> 该验证码识别功能准确率为大于75% ，目前只对数字和字母组成的简单验证码有效，敬请期待下一版本验证码识别工具</p>
+</div>
+</body>
+</html>

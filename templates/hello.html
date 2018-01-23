@@ -1,0 +1,151 @@
+<html>
+ <head>
+ <meta charset="utf-8" />
+<link rel="shortcut icon" href="/static/images/favicon.ico" /> 
+  <title> Search - w3cschool.cc </title>
+  <!-- <base href="http://www.baidu.com" target="_blank">  设置默认连接地址  -->
+  <link rel="stylesheet" type="text/css" href="mystyle.css"><!--定义文档与外部资源连接-->
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="龙超国" />
+  <meta name="keywords" content="html" />
+  <meta name="description" content="html基础学习" />
+  <style type="text/css">
+   body {background-color:green}
+   p {color:blue}     
+   table {color:yellow}
+  </style>
+   <!--bakground-color设置背景颜色 p color设置段落字体颜色-->
+  <!--style 定义html样式,文件引用地址-->
+ </head>
+<!--<body background-color:green> 设置背景颜色-->
+ <body>
+ <form action="http://www.baidu.com/s" method="get">
+        <input type="text" name="wd">
+        <input type="submit" value="Search">
+ </form>
+ <div>
+ <address style="color:red;text-align:right">           <!--地址元素-->
+ writend by <a href="mailto:webmaster@example.com"><i>chaoguo.long</i></a><br>
+ phone:<b>13541349730</b><br/>
+ email:<a href="https://mail.qq.com/cgi-bin/loginpage?autologin=n&t=loginpage_secondpwd&errtype=PENDING&&from=qq&sp=f8b68922501b91dMTQ1Nzk0Nzg4OQ&clientuin=1574529187&tfcont=22%20serialization%3A%3Aarchive%205%200%200%2014%200%200%200%208%20authtype%201%204%207%20spcache%2029%20f8b68922501b91dMTQ1Nzk0Nzg4OQ%202%20sp%2029%20f8b68922501b91dMTQ1Nzk0Nzg4OQ%209%20clientuin%2010%201574529187%206%20domain%206%20qq.com%202%20lc%205%20zh_CN%202%20vm%202%20pt%205%20ADUIN%2010%201574529187%209%20ADSESSION%203%20iii%205%20ADTAG%203%20jjj%206%20ptlang%204%202052%208%20httptype%201%200%207%20ADPUBNO%205%2026553%209%20qqmailkey%2064%20aea31b4259c0e5ea2684bb0ef760ad82a81e9a6afe2fc9846858d8ffbb9d57ee&r=113ae511d3ddcd657d43efb06e21e8a0"><i>1574529187@qq.com</i></a>
+ </address>
+ </div>
+ <div>
+  <h1 style="text-align:center;"> <!--文本对齐方式-->
+  html study
+  </h1>
+  </div>
+  <div>
+  <p>
+  <!--html 超链接-->
+  <b><a href="http://www.baidu.com#4" target='_blank'>百度搜索网页</a></b>
+   <!-- target 属性标示连接文档打开的位置，blank 标示将在新窗口打开连接-->
+  <br/>
+  </p>
+  <p style="color:blue;margin-left:20px;">
+  <i>我是小白，我在学习段落换行</i>
+  <!--'i'表示文本格式的斜体，‘b'表示文本格式的加粗>
+  <!--<br/> 表示空元素 ,有段落换行的功能-->
+  </p>
+  <hr> <!--html 水平线-->
+  <p>
+  <a title="我是小白">我是小白，想在菜鸟教程学习点东西</a> <!--- 这是注释-->
+  </p>
+  <br/>
+  <p style="font-family:arial;color:red;font-size:20px;">
+  <!-- font-family 表示字体, font-size 表示 字体大小-->
+  我是小白，我在学习html段落样式及字体等设计，加油
+  </p>
+  <br/>
+  <p><pre>   我是小白，我在学习html的语格式文本，加油！</pre> </p>
+  <p><pre>          我是小白，<q>我在学习html的块引用相关知识点 ，加油！</q>祝愿能够更加好</pre></p>
+  <br>
+  <p>我是小白，我在学习<del>删除</del>及<ins>插入</ins>字符，加油！</p>
+  
+  <div>
+  <ul>
+  <li style="float:right">
+  <div>
+  <div style="float:left">
+  <img src="/static/images/bg1.jpg" alt="美女图片"  width="288" height="409"></img> 
+  <div>美女图片1</div></div>
+  <div style="float:left">
+  <img src="/static/images/bg2.jpg" style="float:left" width="288" height="409"> </img><br/>
+   <div>美女图片2</div></div></div>
+   </li>
+  <!--当图片无法加载时，显示alt的文本作为替换，align表示在文字中图片的排列位置-->
+ 
+   <!--style="float:right"设置图片在段落浮动的位置-->
+   <li>
+   <div>
+   <br>
+   <p><a href="http://www.baidu.com" target="_top">更多百度</a></p>
+   <br>
+   <p>
+   <a href="mailto:chaoguo.long@downjoy.com?subject=hello%20longchaoguo" target="_top">这是一个邮件发送连接</a>
+   <br><a href="mailto:chaoguo.long@downjoy.com?cc=1574529187@qq.com,2948339327@qq.com&bcc=2948339327@qq.com&subject=hello%20everyone">这是一个向多人发送邮件的连接</a>
+   <!--mailto 标识发送对象，cc标识抄送对象，bcc 标识密送对象 subject 标识邮件主题 主题分隔用%20的形式，如“%20”-->
+   </p>
+   <table border="1" cellpadding='3'>
+   <caption>user</caption>
+   <tr>
+<th>name</th>
+<th>age</th>
+<th colspan='2'>tel</th>
+</tr>
+  <tr>
+  <td>龙超国 </td>
+  <td>22</td>
+  <td>18010542630</td>
+  <td>13541349730</td>
+  </tr>
+  <tr>
+  <td>龙小龙</td>
+  <td>24</td>
+  <td>18010542630</td>
+  <td>13541349730</td>
+  </tr>
+  </table>
+  <br/>
+  <table border='1' cellspacing='5'>
+  <tr>
+  <th>name</th>
+   <td>龙超国</td>
+   </tr>
+   <tr>
+  <th rowspan='2'>telphone</th>
+  <td>13541349730</td>
+  </tr>
+   <tr>
+   <td>18010542630</td>
+   </tr>
+   </tr>
+  </table>
+  <!--border 指定表格是否带边框，caption元素指定表格标题，tr元素标识表格的行
+  ，th元素标识表格的表头，td元素标识表格的单元格 cellspan th元素属性设置单元格分列数，rowspan th元素属性设置单元格分行数，cellpadding 设置单元格内容与单元格边界的间距，cellspacing 设置单元格间距-->
+  <!--html 无序列表（小黑点标记）使用ul标签 有序（数字或者字母序号）列表使用ol标签-->
+  <ul style="list-style-type:square;margin-left:20px">
+  <li>
+  学习无序列表的概念
+  <ul><li>什么是无序列表</li><li>无序列表有什么特点</li></ul>
+  </li>
+  <li>学习无序列表的html语法</li>
+  </ul>
+  <ol type='a' style="margin-left:20px"> <!--type 指定序号类型-->
+    <li>学习有序列表的概念 </li>
+    <li>学习有序列表的html语法</li>
+  </ol>
+  <!--之定义列表-->
+  <dl style="float:left">
+  <dt>学习自定义列表</dt>
+  <dd>* 自定义列表的概念</dd>
+  <dt>学习自定义列表html语法</dt>
+  <dd>* 自定义列表html编程</dd>
+  </dl>
+  </div>
+  </div>
+  </li>
+  </ul>
+  </div>
+ </body>
+</html>

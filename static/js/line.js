@@ -67,6 +67,7 @@ for (vars in lists){
                     series: [{
                         name: '数量',
                         type: 'bar',
+                        //barWidth:10,
                         //stack: 'all',
                         //symbolSize: 10,
                         data: ydata,

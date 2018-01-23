@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <title>问卷</title>
+</head>
+<body>
+<h1 align="center">这是问卷首页</h1>
+<hr/>
+<p>欢迎光临本问卷调查网，本网站收录各种问卷主题 </p>
+<div align="left">
+     {% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+<!--<li><a href="/question/{{ question.id }}/">{{ question.question_text }}</a></li>-->
+        <li>
+        <a href="{% url "questionnaire:detail" question.id %}">{{ question.id}}:{{question.question_text }}</a><br/>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No questionnaire are available.</p>
+{% endif %}
+</div>
+</body>
+</html>

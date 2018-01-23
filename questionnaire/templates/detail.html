@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta charset="UTF-8">
+    <title>问卷详情</title>
+</head>
+<body>
+<h1 align="center">问卷详情</h1>
+<hr/>
+<p>You're looking at question {{ question.id }} </p>
+<h2>{{ question.question_text }}</h2>
+{% if error_message %}<p style="color:red"><strong>{{ error_message }}</strong></p>{% endif %}
+<form action="{% url 'questionnaire:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>
+</body>
+</html>

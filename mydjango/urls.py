@@ -16,9 +16,16 @@ Including another URLconf
 from django.conf.urls import url,include
 from django.contrib import admin
 from myapp import urls
+from weixin import weixiurl
+from questionnaire import urlss
 import views
 urlpatterns =[
     url(r'^$',views.index),
+    url(r'^hello/$', views.hello),
+    url(r'^search_from/$',views.search_form),
+    url(r'^search/$',views.search),
     url(r'^admin/', admin.site.urls),
-    url(r'^myapp/',include(urls))
+    url(r'^myapp/', include(urls)),
+    url(r'^question/', include(urlss)),
+    url(r'^weixin/',include(weixiurl))
     ]

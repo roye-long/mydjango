@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/static/images/favicon.ico"/>
+    <meta charset="UTF-8">
+    <title>投票结果可视化</title>
+    <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
+    <script src="/static/js/config.js"></script>
+    <script src="/static/js/bar.js"></script>
+    <script src="/static/js/pie.js"></script>
+ <style>
+            html,body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+     #main1,#main2{width: 50%;
+                height: 50%;
+                margin: 0;}
+        </style>
+</head>
+<body>
+<h3><strong>1、各问题投票人数分布</strong></h3>
+<div id="main1" align="center">
+    <script>
+     barplots({{ conlist|safe}},"main1")
+    </script>
+</div>
+<h3><strong>2、{{ question.question_text }}</strong></h3>
+<div id="main2" align="center">
+    <script>
+        pieplots({{ clist|safe }},"main2")
+    </script>
+</div>
+</body>
+</html>

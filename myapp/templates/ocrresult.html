@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <title>验证码识别结果</title>
+</head>
+<body>
+<h1 align="center">验证码识别结果</h1>
+<hr/>
+<ul style="align-content: center">
+    <li style="color: #4cae4c">图片名：{{ imgname }}</li><br/>
+    <li>图片大小:{{ imgsize }} B</li><br/>
+    <li>图片：<br/>
+    <img src="data:image/jpeg;base64,{{ img }}">
+    </li>
+    <li>识别结果：{{ result }}</li>
+</ul>
+<br/>
+<a style="align-content: center" href="/myapp/ocr">识别下一张</a>
+</body>
+</html>

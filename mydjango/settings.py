@@ -25,7 +25,7 @@ SECRET_KEY = 'ny%_kbri_4j^46@4f#zdef93rqoad-3#8s$cq3*=q-zlr^hf19'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.dataresearch.club','dcc.datastudy.info','101.200.209.212']
 
 
 # Application definition
@@ -38,13 +38,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
+    'questionnaire'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'mydjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates/webstorm/')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates/')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -80,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'root',
         'HOST':'localhost',
         'PORT':'3306',
     }
@@ -125,7 +126,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    ("js",BASE_DIR +"/static/js"),
-    ("echarts",BASE_DIR +"/static/echarts"),
-    ("images",BASE_DIR +"/static/images")
+    ("js", BASE_DIR + "/static/js"),
+    ("echarts", BASE_DIR + "/static/echarts"),
+    ("images", BASE_DIR + "/static/images"),
+    ("css",BASE_DIR + "/static/css")
 ]

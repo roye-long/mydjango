@@ -1,0 +1,11 @@
+<xml>
+<ToUserName><![CDATA[{{ toUser }}]]></ToUserName>
+<FromUserName><![CDATA[{{ fromUser }}]]></FromUserName>
+<CreateTime>{{ nowtime }}</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[{%if content == "subscribe" %}感谢您的关注,以下是功能列表
+
+此处填写帮助列表 {%else%}{{content}}{% endif %}
+
+           查看帮助请发送"帮助"]]></Content>
+</xml>
